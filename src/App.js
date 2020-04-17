@@ -89,7 +89,8 @@ class App extends Component {
   constructor(props){
     super(props);
     this.state = {
-      launches: []
+      launches: [],
+      searchField:''
     }
   }
   componentDidMount(){
@@ -100,14 +101,25 @@ class App extends Component {
 
   render() {
     // console.log(this.state);
+    // 
+    const {launches, searchField} = this.state;
+    const filteredLaunches = launches.filter(launch => 
+      launch.mission_name.toLowerCase().includes(searchField.toLowerCase())
+    )
+    // toLoWerCase avoid casesensitivity 
+
   return (
       
     
     <>
     <div className="App"> 
-    <input type="search" placeholder="spacex launches"/>
-    
-      <SpaceXlist launches={this.state.launches}/>
+    <input 
+    type="search" 
+    placeholder="spacex launches" 
+    onChange={e=>this.setState({searchField: e.target.value})}/>
+
+      <SpaceXlist launches={filteredLaunches}/>
+      {/* <SpaceXlist launches={this.state.launches}/> */}
     </div>
     </>
   )
