@@ -1,0 +1,18 @@
+.card-list {
+    
+        width: 100vw;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 5px;
+        background-color: rgb(0, 0, 0);
+    
+    
+}
+
+/* .space-img {
+    background-image: ('/src/components/spacex-list/46259778995_fa4f031d69_k-800x533.jpg');
+    background-position: 'center';
+  background-size: 'cover';
+  background-repeat: 'no-repeat'
+} */
