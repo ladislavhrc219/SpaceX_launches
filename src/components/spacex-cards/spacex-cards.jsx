@@ -30,11 +30,6 @@ export const Cards = (props) => {
             <p> {props.launch.launch_site.site_name_long}</p>
             <h2> Failure details </h2> 
             <p> {props.launch.details}</p>
-
-           <h2> Payload </h2>
-            <p> {props.launch.rocket.second_stage.payloads[1]}</p>
-
-            {/* <h2> Links    </h2>     */}
             <h2> 
                 Read the article on  
                 <a href={props.launch.links.article_link}> Space.com </a> 
