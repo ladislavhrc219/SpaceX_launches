@@ -18,6 +18,10 @@ export const SpaceXlist =(props)=> {
                         )
                             )}
                     </div>
+               
+               
+                <h2 class="spacex-footer"> All Rights Reserved @ 2020</h2> 
+                
                 </>
     )
    

@@ -45,6 +45,13 @@
   margin: 30px;
   
 }
+.spacex-footer {
+  color: red;
+  border: 2px solid grey;
+  text-align: center;
+  padding: 20px;
+  margin: 20px;
+}
 .card-titles {
   font-size: 28px;
 }
