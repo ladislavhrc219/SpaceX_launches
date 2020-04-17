@@ -104,8 +104,11 @@ class App extends Component {
       
     
     <>
-    <SpaceXlist launches={this.state.launches}/>
-      
+    <div className="App"> 
+    <input type="search" placeholder="spacex launches"/>
+    
+      <SpaceXlist launches={this.state.launches}/>
+    </div>
     </>
   )
   }
