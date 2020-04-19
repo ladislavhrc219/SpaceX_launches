@@ -19,7 +19,8 @@ export const SpaceXlist =(props)=> {
     return (
                 <>
                 <div className="space-img">
-                    <h1 className="spacex-header bg-warning"> SpaceX Launches </h1>
+                    <h1 className="spacex-header bg-warning"> SpaceX  </h1>
+                    <h1 className="spacex-header bg-warning"> Launch Manifest </h1>
                     
                     <h2 class="spacex-dates">2006 - 2019</h2> 
                     {/* <h2 class="spacex-dates">search mission names </h2>  */}
