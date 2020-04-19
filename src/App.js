@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 // import axios from 'axios';
 import './App.css';
 
-// import {SearchBox} from './components/searchbox/searchbox.jsx';
+import {SearchBox} from './components/searchbox/searchbox.jsx';
 
 import {SpaceXlist} from './components/spacex-list/spacex-list.jsx';
 
@@ -26,6 +26,11 @@ class App extends Component {
     .then(data=> this.setState({launches:data}));
   }
 
+  
+  handleChange =(e) => {
+    this.setState({searchField:e.target.value})
+  }
+
   render() {
     // console.log(this.state);
     // 
@@ -46,11 +51,25 @@ class App extends Component {
     type="search" 
     placeholder='search launches'
     onChange={e=>this.setState({searchField: e.target.value})}/> */}
+    
+    <div className="spacex-dates"> 
+      <h1> search missions: </h1> 
+      
+    </div>
+    <SearchBox
+                className='search'
+                placeholder=' mission names'
+                handleChange={this.handleChange}
+                />
+      <SpaceXlist launches={filteredLaunches}/>
+      
+      {/* <SpaceXlist launches={this.state.launches}/> */}
 
       
-      <SpaceXlist launches={filteredLaunches}/>
-      {/* <SpaceXlist launches={this.state.launches}/> */}
     </div>
+
+   
+    
     </>
   )
   }
