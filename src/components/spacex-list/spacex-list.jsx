@@ -3,7 +3,7 @@ import React from 'react';
 import {Cards} from '../spacex-cards/spacex-cards.jsx';
 import './spacex-list.css';
 // 
-import {SearchBox} from './../searchbox/searchbox.jsx';
+// import {SearchBox} from './../searchbox/searchbox.jsx';
 // import {SearchBox} from './components/searchbox/searchbox.jsx';
 
 
@@ -19,9 +19,11 @@ export const SpaceXlist =(props)=> {
     return (
                 <>
                 <div className="space-img">
-                    <h1 className="spacex-header bg-warning"> SpaceX Launch Manifest
+                    <h1 className="spacex-header bg-warning">
+                         SpaceX
+                         <br></br>
+                          Launch Manifest
                     
-                    {/* <br>  */}
                     </h1>
                     {/* <h1 className="spacex-header bg-warning"> Launch Manifest </h1> */}
                     
