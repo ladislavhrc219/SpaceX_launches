@@ -3,6 +3,8 @@ import React from 'react';
 import './searchbox.css';
 
 export const SearchBox = ({placeholder, handleChange }) => (
+
+    // <h2></h2>
     <input 
     className='search'
     type="search" 
@@ -10,7 +12,4 @@ export const SearchBox = ({placeholder, handleChange }) => (
     onChange={handleChange}/>
 
 
-    )
-
-    
-    // onChange={e=>this.setState({searchField: e.target.value}
+)
