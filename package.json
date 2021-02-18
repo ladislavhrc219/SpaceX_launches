@@ -10,6 +10,8 @@
     "bootstrap": "^4.6.0",
     "mdbootstrap": "^4.16.0",
     "mdbreact": "^4.27.0",
+    "node-sass": "^5.0.0",
+    "node-sass-install": "^1.0.2",
     "react": "^16.13.1",
     "react-bootstrap": "^1.4.3",
     "react-dom": "^16.13.1",
@@ -17,7 +19,8 @@
     "react-route": "^1.0.3",
     "react-router-dom": "^5.2.0",
     "react-scripts": "^4.0.1",
-    "reactstrap": "^8.4.1"
+    "reactstrap": "^8.4.1",
+    "sass-loader": "^10.1.1"
   },
   "scripts": {
     "start": "react-scripts start",

@@ -1,8 +1,8 @@
 import React from 'react';
-import { Jumbotron, Button } from 'react-bootstrap';
+// import { Jumbotron, Button } from 'react-bootstrap';
 import {Cards} from '../spacex-cards/spacex-cards.jsx';
 import './spacex-list.css';
-
+import {Navbar} from '../navbar/navbar';
 // import {SearchBox} from './../searchbox/searchbox.jsx';
 // import {SearchBox} from './components/searchbox/searchbox.jsx';
 
@@ -46,8 +46,9 @@ export const SpaceXlist =(props)=> {
                     </div>
                
                
-                <h2 class="spacex-footer"> All Rights Reserved 2021</h2> 
+                <h2 className="spacex-footer"> SpaceX 2021</h2> 
                 
+                <Navbar/>
                 </>
     )
    
