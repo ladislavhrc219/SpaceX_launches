@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
-import {Switch, Route} from 'react-router-dom';
+import {Switch, Route, withRouter} from 'react-router-dom';
 import NewApp from './components/newApp';
 import Header from "./components/header/header.component.jsx";
-
+// import {withRouter} from './react-router-dom';
 
 import SignInAndSignUp from './components/sign-in-sign-up.component/sign-in-sign-up.component.jsx'
 
@@ -54,4 +54,4 @@ function App (){
 }
 
 
-export default App;
+export default withRouter(App);
